@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Family Pics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Kasouit Family Pics</h1>
+    <img id="img1" src="hi.jpg">
+    <h3 id="h3">Family Book</h3>
+    <button type="button" id="next" onclick="next()">NEXT</button>
+    <script>
+        var img = ["dad.png", "mom.jpg", "bro.png", "meduh.png"];
+        var name = ["Samir", "Zaara", "Anas", "Adam"];
+        var i=0;
+        function next() {
+            while (i <= 3) {
+                var updatedimage=img[i];
+                var updatedname=name[i];
+                document.getElementById("img1").src =updatedimage;
+                document.getElementById("h3").innerHTML = updatedname;
+                i++;
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>
